@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* style général */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(91, 91, 236);
+}
+
+div{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.3);
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* box add */
+div.add{
+    top: 400px;
+    display: flex;
+    height: 80px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#task{
+    height: 100%;
+    display: inline-block;
+    width: 75%;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(91, 91, 236);
+}
+
+
+#push{
+    height: 100%;
+    display: inline-block;
+    width: 15%;
+    color: white;
+    background:rgb(91, 91, 236);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+/* Box resultats */
+
+div.tasks{
+ top: 520px;
+}
+
+li{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+li > *{
+    display: inline-block;
+}
+
+li p{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+li i{
+    width: 10%;
+    position: relative;
+}
+
+li i::before{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bxs-trash{
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+
+.bx-edit-alt{
+    background: rgb(91, 91, 236);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+.underline{
+    text-decoration: line-through;
+}
